@@ -1,0 +1,46 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+.wrapper{
+    height: 100%;
+    padding: 50px 575px;
+    background-color: #333;
+}
+
+.page__item{
+}
+
+.button{
+    background-color: #7A9568;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 5px;
+    position: relative;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease 0s;
+    overflow: hidden;
+}
+
+.button:hover{
+    background-color: #68805d;
+}
+
+.ripple{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    animation: button-circle 2s ease forwards;
+}
+
+@keyframes button-circle{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+}
